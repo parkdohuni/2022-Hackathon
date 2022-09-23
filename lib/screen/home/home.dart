@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hackathon_irang/model/recommandList.dart';
 import '../../constants.dart';
 import '../../theme.dart';
-import 'dustMap.dart';
+import 'naverMap.dart';
 import 'recommandPlace.dart';
 
 class Home extends StatelessWidget {
@@ -60,8 +60,9 @@ class Home extends StatelessWidget {
         ),
         // 8
         body: TabBarView(
+          physics: NeverScrollableScrollPhysics(),
           children: [
-            DustMap(),
+            NaverMap(),
             RecommendPlace(),
           ],
         ),
