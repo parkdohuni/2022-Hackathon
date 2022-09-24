@@ -43,8 +43,8 @@ class PracticeData {
   ];
 
   static List<CustomMarker> myMarkers(){
-    List<CustomMarker> _list = [];
-    PracticeData.myStores.forEach((StoreType st) => _list.add(CustomMarker.fromMyStores(st)));
-    return _list;
+    List<CustomMarker> list = [];
+    PracticeData.myStores.forEach((StoreType st) => list.add(CustomMarker.fromMyStores(st)));
+    return list;
   }
 }

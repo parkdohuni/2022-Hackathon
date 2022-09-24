@@ -21,10 +21,10 @@ class CustomMarker extends Marker {
   factory CustomMarker.fromMyStores(StoreType store) => CustomMarker(store: store, position: store.location);
 
   Future<void> createImage(BuildContext context) async {
-    icon = await OverlayImage.fromAssetImage(assetName: store.markerImage, context: context);
+    this.icon = await OverlayImage.fromAssetImage(assetName: this.store.markerImage, context: context);
   }
 
   void setOnMarkerTab(void Function(Marker marker, Map<String, int> iconSize) callBack){
-    onMarkerTab = callBack;
+    this.onMarkerTab = callBack;
   }
 }
