@@ -5,7 +5,35 @@ import '../../../theme.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+class RecommendPlaceFireBase {
+  late CollectionReference recommendLocationReference;
+  late Stream<QuerySnapshot> recommendLocationStream;
+
+  Future initDB() async {
+    recommendLocationReference = FirebaseFirestore.instance.collection('buk');
+    recommendLocationStream = recommendLocationReference.snapshots();
+  }
+
+  List<RecommendLocation> getRecommendLocations(AsyncSnapshot<QuerySnapshot> snapshot) {
+    return snapshot.data!.docs.map((DocumentSnapshot document) {
+      return RecommendLocation.fromSnapShot(document);
+    }).toList();
+  }
+}
+
 class EachRecommendPlace extends StatelessWidget {
+
+  List<RecommendLocation> recommendLocations = [];
+  RecommendPlaceFireBase recommendPlaceFirebase = RecommendPlaceFireBase();
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   setState(() {
+  //     recommendPlaceFirebase = RecommendPlaceFireBase();
+  //   });
+  // }
+
   EachRecommendPlace({
     Key? key,
     required this.recommendList,
@@ -73,10 +101,10 @@ class EachRecommendPlace extends StatelessWidget {
                           text: '대구광역시 ',
                           style: TextStyle(color: Colors.black.withOpacity(0.6)),
                         ),
-                        TextSpan(
-                          text: recommendList.mainLocation,
-                          style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                        ),
+                        // TextSpan(
+                        //   text: recommendList.mainLocation,
+                        //   style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                        // ),
                         TextSpan(
                           text: recommendList.specificLocation,
                           style: TextStyle(color: Colors.black.withOpacity(0.6)),
