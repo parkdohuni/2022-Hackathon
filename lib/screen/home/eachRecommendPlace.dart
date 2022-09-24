@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import '../../model/recommandList.dart';
 import '../../../theme.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class EachRecommendPlace extends StatelessWidget {
-  const EachRecommendPlace({
+  EachRecommendPlace({
     Key? key,
     required this.recommendList,
   }) : super(key: key);
