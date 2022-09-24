@@ -23,6 +23,12 @@
 
 &nbsp; 미세먼지를 예측하기 위하여 ml_algo API를 사용하였습니다. 'air.daegu.go.kr'에서 각 구의 일별 미세먼지 데이터를 가져와서 내일의 미세먼지 값을 target 값으로 학습하였습니다. 알고리즘은 continuous한 값을 추정하기 위해 Regression 모델 중 KnnRegressor를 사용하였습니다. 예측을 수행할 때는 네이버 날씨 사이트에서 오늘 미세먼지 값을 크롤링하여 일주일간의 미세먼지 값을 예측하였습니다.
 
+&nbsp; Flutter에서 제공하는 scrollable_list_tabview package를 활용하여 전체 리스트를 한번에 확인할 수 있으면서도 편리하게 특정 index로 이동할 수 있도록 하였습니다.
+예스키즈존의 정보를 수집하기 위해 BeautifulSoup library를 활용하였습니다. '대구 예스키즈존'키워드로 데이터를 수집 후 시각화하여 나온 카페들을 중심으로 json형태로 앱 화면에 데이터를 보여주었습니다.
+
+<img src="https://user-images.githubusercontent.com/87708291/192111825-2b1d21d8-29b2-4ce2-8647-dd342a394a42.png" width="150" height="100">
+
+
 # 🎥Youtube
 Link: 
 
