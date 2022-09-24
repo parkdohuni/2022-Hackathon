@@ -22,13 +22,13 @@ class YesKidsZoneCafe extends StatelessWidget {
           ],
         ),
       ),
-      body: MyHomePage(title: '',),
+      body: CafeList(title: '',),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({
+class CafeList extends StatefulWidget {
+  CafeList({
     Key? key,
     required this.title,
   }) : super(key: key);
@@ -36,10 +36,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _CafeList createState() => _CafeList();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _CafeList extends State<CafeList> {
   
   List _items = [];
   List _itemsEast = [];
@@ -50,6 +50,16 @@ class _MyHomePageState extends State<MyHomePage> {
   List _itemsSusung = [];
   List _itemDalseo = [];
   List _itemsCenter=[];
+/*
+  icon: SizedBox(
+  width: 45,
+  height: 45,
+  child: IconButton(
+  onPressed: press,
+  icon: SvgPicture.asset(icon ?? "assets/icons/star.svg",
+  color: isActive ? kPrimaryColor : Colors.black),
+  ),
+  ),*/
   
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('assets/json/yeskids.json');
@@ -433,4 +443,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
