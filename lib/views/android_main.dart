@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hackathon_irang/custom_class/marker_class.dart';
+import 'package:hackathon_irang/custom_class/store_class.dart';
 import 'package:hackathon_irang/views/components/store_info_widget.dart';
 import 'package:naver_map_plugin/naver_map_plugin.dart' as naver;
 import 'package:naver_map_plugin/naver_map_plugin.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../providers/map_provider.dart';
 
