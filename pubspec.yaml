@@ -86,6 +86,8 @@ flutter:
   - assets/icons/
   - assets/images/
   - assets/dataset/
+  - assets/markers/cafe.png
+  - assets/markers/restaurant.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

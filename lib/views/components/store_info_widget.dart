@@ -28,10 +28,10 @@ class StoreInfoWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Text("가계이름:  ${store?.storeName}"),
-            Text("전화번호:  ${store?.phoneNumber}"),
-            Text("주소:     ${store?.address}"),
-            Text("SNS:     ${store?.snsLink}"),
+            Text("가계이름:  ${this.store?.storeName}"),
+            Text("전화번호:  ${this.store?.phoneNumber}"),
+            Text("주소:     ${this.store?.address}"),
+            Text("SNS:     ${this.store?.snsLink}"),
           ],
         ),
       ),

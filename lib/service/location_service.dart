@@ -17,9 +17,9 @@ class LocationService {
   }
 
   Future<bool> canGetCurrentLocation() async {
-    final LocationPermission permission = await hasLocationPermission();
+    final LocationPermission permission = await this.hasLocationPermission();
     if (permission == LocationPermission.always || permission == LocationPermission.whileInUse) {
-      final bool enabled = await isLocationEnabled();
+      final bool enabled = await this.isLocationEnabled();
       if (enabled) return true;
     }
     return false;

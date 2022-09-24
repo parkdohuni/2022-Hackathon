@@ -5,7 +5,7 @@ abstract class StoreType {
   final String storeName = "";
   final String address = "";
   final String markerImage = "";
-  final LocationClass location = LocationClass(longitude: 0.0, latitude: 0.0);
+  final LocationClass location = LocationClass(longitude: 37.55, latitude: 126.92);
   final String detailInfo = "";
   final String phoneNumber = "";
   final String snsLink = "";
