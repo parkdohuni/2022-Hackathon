@@ -32,7 +32,6 @@ class EachRecommendPlace extends StatelessWidget {
 
   final RecommendLocation recommendList;
 
-  late int i;
   @override
   Widget build(BuildContext context) {
     // return StreamBuilder<QuerySnapshot> (
