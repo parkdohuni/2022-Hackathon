@@ -5,7 +5,7 @@ class RecommendLocation {
   late String name;
   late double starRate;
   late String category;
-  late String specificLocation;
+  late String address;
   late DocumentReference? reference;
 
   RecommendLocation({
@@ -13,7 +13,7 @@ class RecommendLocation {
     required this.name,
     required this.starRate,
     required this.category,
-    required this.specificLocation,
+    required this.address,
     this.reference,
     //required this.ImageUrl,
   });
@@ -24,7 +24,7 @@ class RecommendLocation {
       'name': name,
       'category': category,
       'starRate': starRate,
-      'specificLocation': specificLocation,
+      'address': address,
     };
   }
 
@@ -33,7 +33,7 @@ class RecommendLocation {
     name = map?['name'];
     category = map?['category'];
     starRate = map?['starRate'];
-    specificLocation = map?['specificLocation'];
+    address = map?['address'];
   }
 
   RecommendLocation.fromSnapShot(DocumentSnapshot document) {
@@ -42,7 +42,7 @@ class RecommendLocation {
     name = map['name'];
     category = map['category'];
     starRate = map['starRate'];
-    specificLocation = map['specificLocation'];
+    address = map['address'];
     reference = document.reference;
   }
 }
@@ -52,30 +52,30 @@ List<RecommendLocation> recommendList = [
     name: '아르떼 수성랜드',
     starRate: 4.0,
     category: '관광 명소',
-    specificLocation: '무학로 42',
+    address: '무학로 42',
   ),
   RecommendLocation(
     name: '고산골 공룡공원',
     starRate: 4.2,
     category: '관광 명소',
-    specificLocation: '봉덕 2동 1586-4',
+    address: '봉덕 2동 1586-4',
   ),
   RecommendLocation(
     name: '대구 수목원',
     starRate: 4.6,
     category: '관광 명소',
-    specificLocation: '화암로 432',
+    address: '화암로 432',
   ),
   RecommendLocation(
     name: '토이빌리지 대구혁신점',
     starRate: 4.2,
     category: '실내 놀이터',
-    specificLocation: '혁신대로 468',
+    address: '혁신대로 468',
   ),
   RecommendLocation(
     name: '청솔공원',
     starRate: 4.2,
     category: '공원',
-    specificLocation: '신매동',
+    address: '신매동',
   ),
 ];
