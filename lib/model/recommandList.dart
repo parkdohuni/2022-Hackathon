@@ -56,7 +56,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.4,
     category: '실내 놀이터',
     address: '북구 유통단지로14길 22',
-    image: '',
+    image: 'assets/images/momo.JPG',
   ),
   RecommendLocation(
     id: 'buk',
@@ -64,7 +64,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.3,
     category: '관광 명소',
     address: '북구 침산남로9길 118',
-    image: '',
+    image: 'assets/images/chimsan.JPG',
   ),
   RecommendLocation(
     id: 'su',
@@ -72,7 +72,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.0,
     category: '관광 명소',
     address: '수성구 무학로 42',
-    image: '',
+    image: 'assets/images/susung.JPG',
   ),
   RecommendLocation(
     id: 'su',
@@ -80,7 +80,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.0,
     category: '관광 명소',
     address: '수성구 대흥동 504',
-    image: '',
+    image: 'assets/images/iniee.JPG',
   ),
   RecommendLocation(
     id: 'su',
@@ -88,7 +88,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.3,
     category: '카페',
     address: '수성구 두산동 용학로 106-7',
-    image: '',
+    image: 'assets/images/funtheland.JPG',
   ),
   RecommendLocation(
     id: 'su',
@@ -96,7 +96,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.4,
     category: '관광 명소',
     address: '수성구 미술관로 40',
-    image: '',
+    image: 'assets/images/art.JPG',
   ),
   RecommendLocation(
     id: 'nam',
@@ -104,7 +104,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.2,
     category: '관광 명소',
     address: '남구 봉덕 2동 1586-4',
-    image: '',
+    image: 'assets/images/dino.JPG',
   ),
   RecommendLocation(
     id: 'jung',
@@ -112,7 +112,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.2,
     category: '관광 명소',
     address: '중구 달성공원로 35',
-    image: '',
+    image: 'assets/images/dalsung.JPG',
   ),
   RecommendLocation(
     id: 'jung',
@@ -120,7 +120,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.3,
     category: '관광 명소',
     address: '중구 동성로2길 61',
-    image: '',
+    image: 'assets/images/spark.JPG',
   ),
   RecommendLocation(
     id: 'dal',
@@ -128,7 +128,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.6,
     category: '관광 명소',
     address: '달서구 화암로 432',
-    image: '',
+    image: 'assets/images/flower.JPG',
   ),
   RecommendLocation(
     id: 'dal',
@@ -136,7 +136,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.4,
     category: '관광 명소',
     address: '달서구 성당동 154',
-    image: '',
+    image: 'assets/images/dewryu.JPG',
   ),
   RecommendLocation(
     id: 'dal',
@@ -144,7 +144,7 @@ List<RecommendLocation> recommendList = [
     starRate: 4.4,
     category: '관광 명소',
     address: '달서구 도원동 952',
-    image: '',
+    image: 'assets/images/83.JPG',
   ),
   RecommendLocation(
     id: 'dong',
@@ -152,15 +152,15 @@ List<RecommendLocation> recommendList = [
     starRate: 4.1,
     category: '관광 명소',
     address: '동구 도장길 29',
-    image: '',
+    image: 'assets/images/bangzza.JPG',
   ),
   RecommendLocation(
     id: 'dong',
-    name: '등촌유원지',
+    name: '동촌유원지',
     starRate: 4.2,
     category: '관광 명소',
     address: '동구 효목1동 효동로6길',
-    image: '',
+    image: 'assets/images/dungchon.PNG',
   ),
   RecommendLocation(
     id: 'dong',
@@ -168,6 +168,6 @@ List<RecommendLocation> recommendList = [
     starRate: 4.3,
     category: '관광 명소',
     address: '동구 동부로 149',
-    image: '',
+    image: 'assets/images/aqua.PNG',
   ),
 ];

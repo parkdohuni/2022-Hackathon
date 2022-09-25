@@ -113,7 +113,7 @@ class EachRecommendPlace extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Image.asset('assets/images/sample1.jpg'),
+                      Image.asset(recommendList.image),
                       //Image.asset('assets/images/sample.jpg'),
                     ],
                   ),
