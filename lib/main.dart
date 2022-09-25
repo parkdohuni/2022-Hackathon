@@ -5,9 +5,7 @@ import 'screen/mainScreen.dart';
 import 'screen/splashScreen/splashScreen.dart';
 import 'route.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+void main() {
   runApp(IRang());
 }
 
