@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../constants.dart';
 import '../model/navItem.dart';
 import 'home/home.dart';
-import 'noKidsZoneCafe/noKidsZoneCafe.dart';
+import 'yesKidsZoneCafe/yesKidsZoneCafe.dart';
 import 'weeklyDust/weeklyDust.dart';
 
 class MainScreen extends StatefulWidget {
@@ -24,7 +24,7 @@ class _MainScreenState extends State<MainScreen> {
         children: [
           Home(),
           WeeklyDust(),
-          NoKidsZoneCafe(),
+          YesKidsZoneCafe(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

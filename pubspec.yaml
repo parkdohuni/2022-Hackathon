@@ -34,6 +34,7 @@ dependencies:
   geolocator: ^9.0.2
   provider: ^6.0.3
   naver_map_plugin: ^0.9.6
+  scrollable_positioned_list: ^0.3.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -89,6 +90,8 @@ flutter:
   - assets/markers/cafe.png
   - assets/markers/restaurant.png
   - assets/markers/icon.png
+  - assets/json/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
