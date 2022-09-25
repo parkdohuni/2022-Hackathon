@@ -3,7 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import '../custom_class/location_class.dart';
 
 class LocationService {
-  static const LocationClass initLocation = LocationClass(latitude: 37.545150, longitude: 126.922929);
+  static const LocationClass initLocation = LocationClass(latitude: 35.798838, longitude: 128.583052);
 
   Future<LocationPermission> hasLocationPermission() async => await Geolocator.checkPermission();
 

@@ -119,7 +119,7 @@ class StoreType {
   final String uid = "";
   final String name = "";
   final String address = "";
-  final String markerImage = "assets/markers/restaurant.png";
+  final String markerImage = "assets/markers/icon.png";
   final LocationClass location = LocationClass(longitude: 0.0, latitude: 0.0);
   final String category = "";
   final String starRate = "";
@@ -140,7 +140,7 @@ class Info implements StoreType {
   final String starRate;
 
   @override
-  final String markerImage = "assets/markers/restaurant.png";
+  final String markerImage = "assets/markers/icon.png";
 
   @override
   final String name;
