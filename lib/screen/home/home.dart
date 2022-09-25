@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 1
-    List<String> categories = ["오늘의 미세먼지", "추천 장소"];
+    List<String> categories = ["한 눈에 보기", "추천 장소"];
     // 2
     return DefaultTabController(
       // 3
