@@ -7,7 +7,7 @@ import 'package:hackathon_irang/providers/map_provider.dart';
 import 'package:hackathon_irang/views/android_main.dart';
 import 'package:hackathon_irang/views/ios_main.dart';
 import 'package:provider/provider.dart';
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 class NaverMap extends StatelessWidget {
   const NaverMap({Key? key}) : super(key: key);
 

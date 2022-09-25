@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../model/recommandList.dart';
 import 'eachRecommendPlace.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import '../weeklyDust/weeklyDust.dart';
 
 class RecommendPlace extends StatelessWidget {
 
@@ -12,7 +13,8 @@ class RecommendPlace extends StatelessWidget {
       body: ListView(
         children: List.generate(
             recommendList.length,
-                (index) => EachRecommendPlace(recommendList: recommendList[index])),
+                (index) => EachRecommendPlace(recommendList: recommendList[index]),
+            ),
       ),
     );
   }

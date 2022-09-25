@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1097117289940",
+    "project_id": "hackathon-8edd8",
+    "storage_bucket": "hackathon-8edd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097117289940:android:0f37abbb73a7442553da41",
+        "android_client_info": {
+          "package_name": "com.example.hackathon_irang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097117289940-r1ltep9hr8pkd5cv6b0d335o5eptb38p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZZCjTOotC-tsJ9imXbA4TpWB9fX10UJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097117289940-r1ltep9hr8pkd5cv6b0d335o5eptb38p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097117289940-7ehhrht1t10c5khi027uassotmiqc204.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hackathonIrang"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,7 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import '../custom_class/location_class.dart';
 
 class LocationService {
-  static const LocationClass initLocation = LocationClass(latitude: 37.545150, longitude: 126.922929);
+  static const LocationClass initLocation = LocationClass(latitude: 35.798838, longitude: 128.583052);
 
   Future<LocationPermission> hasLocationPermission() async => await Geolocator.checkPermission();
 
@@ -17,9 +17,9 @@ class LocationService {
   }
 
   Future<bool> canGetCurrentLocation() async {
-    final LocationPermission permission = await hasLocationPermission();
+    final LocationPermission permission = await this.hasLocationPermission();
     if (permission == LocationPermission.always || permission == LocationPermission.whileInUse) {
-      final bool enabled = await isLocationEnabled();
+      final bool enabled = await this.isLocationEnabled();
       if (enabled) return true;
     }
     return false;

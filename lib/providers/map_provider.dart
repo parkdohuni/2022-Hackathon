@@ -14,28 +14,28 @@ class MapProvider with ChangeNotifier {
   final List<CustomMarker> myMarkers = PracticeData.myMarkers();
 
   MapProvider(){
-    Future(setCurrentLocation);
+    Future(this.setCurrentLocation);
   }
 
-  StoreType? _selectedStore;
-  StoreType? get selectedStore => _selectedStore;
-  set selectedStore(StoreType? s) => throw "error";
-
   LocationTrackingMode _trackingMode = LocationTrackingMode.None;
-  LocationTrackingMode get trackingMode => _trackingMode;
+  LocationTrackingMode get trackingMode => this._trackingMode;
   set trackingMode(LocationTrackingMode m) => throw "error";
 
   Future<void> setCurrentLocation() async {
-    if (await _locationService.canGetCurrentLocation()){
-      _trackingMode = LocationTrackingMode.Follow;
-      notifyListeners();
+    if (await this._locationService.canGetCurrentLocation()){
+      this._trackingMode = LocationTrackingMode.Follow;
+      this.notifyListeners();
     }
   }
 
+  StoreType? _selectedStore;
+  StoreType? get selectedStore => this._selectedStore;
+  set selectedStore(StoreType? s) => throw "error";
+
   void onTapMarker(String uid){
     final StoreType store = PracticeData.myStores.firstWhere((StoreType s) => s.uid == uid);
-    _selectedStore = store;
-    notifyListeners();
+    this._selectedStore = store;
+    this.notifyListeners();
   }
 
 }

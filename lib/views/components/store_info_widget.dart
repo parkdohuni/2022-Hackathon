@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../custom_class/store_class.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class StoreInfoWidget extends StatelessWidget {
   const StoreInfoWidget({Key? key, required this.store}) : super(key: key);
@@ -28,13 +29,14 @@ class StoreInfoWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Text("가계이름:  ${store?.storeName}"),
-            Text("전화번호:  ${store?.phoneNumber}"),
-            Text("주소:     ${store?.address}"),
-            Text("SNS:     ${store?.snsLink}"),
+            Text("카테고리: ${this.store?.category}"),
+            Text("가게이름:  ${this.store?.name}"),
+            Text("별점:  ${this.store?.starRate}"),
+            Text("주소:     ${this.store?.address}"),
           ],
         ),
       ),
     );
   }
+
 }
