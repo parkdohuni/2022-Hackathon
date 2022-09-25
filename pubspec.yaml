@@ -91,6 +91,8 @@ flutter:
     - assets/markers/restaurant.png
     - assets/markers/icon.png
     - assets/json/yeskids.json
+    - assets/icons/baby-boy.png
+    - assets/icons/location.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -63,7 +63,7 @@ class _MainScreenState extends State<MainScreen> {
         height: 45,
         child: IconButton(
           onPressed: press,
-          icon: SvgPicture.asset(icon ?? "assets/icons/star.svg",
+          icon: SvgPicture.asset(icon ?? "assets/icons/face-mask-svgrepo-com.svg",
               color: isActive ? kPrimaryColor : Colors.black),
         ),
       ),

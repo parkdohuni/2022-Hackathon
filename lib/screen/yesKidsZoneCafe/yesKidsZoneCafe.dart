@@ -193,14 +193,16 @@ class _CafeList extends State<CafeList> {
                       child: Column(
                         children: [
                           Flexible(
+                            flex: 6,
                             child: Container(
                               height: 115.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(image: Image.network(_itemsEast[index]["image"],).image, fit: BoxFit.fill)
                               ),
-                            ), flex: 6,
+                            ), //flex: 6,
                           ),
                           Flexible(
+                            flex: 5,
                             child: Container(
                               padding: EdgeInsets.all(10.0),
                               alignment: Alignment.bottomLeft,
@@ -213,7 +215,7 @@ class _CafeList extends State<CafeList> {
                                   Text(_itemsEast[index]["address"], style: TextStyle(fontSize: 10),),
                                 ],
                               ),
-                            ), flex: 4,
+                            ), //flex: 4,
                           ),
                         ],
                       ));
@@ -235,14 +237,16 @@ class _CafeList extends State<CafeList> {
                     child: Column(
                       children: [
                         Flexible(
+                          flex: 6,
                           child: Container(
                             height: 115.0,
                             decoration: BoxDecoration(
                                 image: DecorationImage(image: Image.network(_itemsCenter[index]["image"],).image, fit: BoxFit.fill)
                             ),
-                          ), flex: 6,
+                          ),
                         ),
                         Flexible(
+                          flex: 5,
                           child: Container(
                             padding: EdgeInsets.all(10.0),
                             alignment: Alignment.bottomLeft,
@@ -255,7 +259,7 @@ class _CafeList extends State<CafeList> {
                                 Text(_itemsCenter[index]["address"], style: TextStyle(fontSize: 10),),
                               ],
                             ),
-                          ), flex: 4,
+                          ),
                         ),
                       ],
                     ));
@@ -279,14 +283,16 @@ class _CafeList extends State<CafeList> {
                       child: Column(
                         children: [
                           Flexible(
+                            flex: 6,
                             child: Container(
                               height: 115.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(image: Image.network(_itemsWest[index]["image"],).image, fit: BoxFit.fill)
                               ),
-                            ), flex: 6,
+                            ),
                           ),
                           Flexible(
+                            flex: 5,
                             child: Container(
                               padding: EdgeInsets.all(10.0),
                               alignment: Alignment.bottomLeft,
@@ -300,7 +306,7 @@ class _CafeList extends State<CafeList> {
 
                                 ],
                               ),
-                            ), flex: 4,
+                            ),
                           ),
                         ],
                       ));
@@ -322,14 +328,16 @@ class _CafeList extends State<CafeList> {
                       child: Column(
                         children: [
                           Flexible(
+                            flex: 6,
                             child: Container(
                               height: 115.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(image: Image.network(_itemDalseo[index]["image"],).image, fit: BoxFit.fill)
                               ),
-                            ), flex: 6,
+                            ),
                           ),
                           Flexible(
+                            flex: 5,
                             child: Container(
                               padding: EdgeInsets.all(10.0),
                               alignment: Alignment.bottomLeft,
@@ -342,7 +350,7 @@ class _CafeList extends State<CafeList> {
                                   Text(_itemDalseo[index]["address"], style: TextStyle(fontSize: 10),),
                                 ],
                               ),
-                            ), flex: 4,
+                            ),
                           ),
                         ],
                       ));
@@ -365,14 +373,16 @@ class _CafeList extends State<CafeList> {
                       child: Column(
                         children: [
                           Flexible(
+                            flex: 6,
                             child: Container(
                               height: 115.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(image: Image.network(_itemsSusung[index]["image"],).image, fit: BoxFit.fill)
                               ),
-                            ), flex: 6,
+                            ),
                           ),
                           Flexible(
+                            flex: 6,
                             child: Container(
                               padding: EdgeInsets.all(10.0),
                               alignment: Alignment.bottomLeft,
@@ -385,7 +395,7 @@ class _CafeList extends State<CafeList> {
                                   Text(_itemsSusung[index]["address"], style: TextStyle(fontSize: 10),),
                                 ],
                               ),
-                            ), flex: 4,
+                            ),
                           ),
                         ],
                       ));
@@ -411,14 +421,16 @@ class _CafeList extends State<CafeList> {
                       child: Column(
                         children: [
                           Flexible(
+                            flex: 6,
                             child: Container(
                               height: 115.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(image: Image.network(_itemsDalsung[index]["image"],).image, fit: BoxFit.fill)
                               ),
-                            ), flex: 6,
+                            ),
                           ),
                           Flexible(
+                            flex: 5,
                             child: Container(
                               padding: EdgeInsets.all(10.0),
                               alignment: Alignment.bottomLeft,
@@ -431,7 +443,7 @@ class _CafeList extends State<CafeList> {
                                   Text(_itemsDalsung[index]["address"], style: TextStyle(fontSize: 10),),
                                 ],
                               ),
-                            ), flex: 4,
+                            ),
                           ),
                         ],
                       ));
