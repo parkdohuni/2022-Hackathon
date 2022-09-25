@@ -22,8 +22,8 @@ class _MainScreenState extends State<MainScreen> {
       body: IndexedStack(
         index: _selectedIndex,
         children: [
-          Home(),
           WeeklyDust(),
+          Home(),
           YesKidsZoneCafe(),
         ],
       ),

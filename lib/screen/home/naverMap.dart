@@ -18,6 +18,7 @@ class NaverMap extends StatelessWidget {
         ChangeNotifierProvider<MapProvider>(create: (_) => MapProvider())
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: MainPage(),
       ),
     );
