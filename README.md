@@ -31,7 +31,7 @@
 
 
 # 🎥Youtube
-Link: 
+Link: https://youtu.be/CDJ2n7YrlR4
 
 # ⚠️Caution
 Run>Edit Configurations>Additional run args>--no-sound-null-safety 설정해주세요!
