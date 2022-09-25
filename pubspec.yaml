@@ -85,10 +85,10 @@ flutter:
   - assets/icons/
   - assets/images/
   - assets/dataset/
-  - assets/json/
   - assets/markers/cafe.png
   - assets/markers/restaurant.png
   - assets/markers/icon.png
+  - assets/json/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
